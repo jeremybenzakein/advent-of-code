@@ -77,7 +77,6 @@ function solution2(programLines) {
         switch (operation) {
             case "nop":
                 if (modifiableInstructionEncountered === modifiedInstructionIndex) {
-                    console.log(`modified line ${head}: ${operation}(${param})`)
                     head += param;
                 } else {
                     head++;
